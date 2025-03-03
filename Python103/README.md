@@ -9,7 +9,7 @@ Welcome to the Python Classes Project! This project focuses on **object-oriented
 1. **Navigate to the Project Directory**:  
    - Move into the project folder:  
      ```bash
-     cd Python101
+     cd Python103
      ```
 
 2. **Set Up a Virtual Environment**:  
