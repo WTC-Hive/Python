@@ -26,5 +26,5 @@ Welcome to the **Python Practice Repository**! 🚀 This repo is packed with exc
 ## 🚀 Getting Started  
 1️⃣ Clone this repo:  
    ```bash
-   git clone https://github.com/yourusername/python-practice.git
+   git clone https://github.com/WTC-Hive/Python.git
    ```
