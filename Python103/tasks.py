@@ -7,15 +7,7 @@ class Vehicle:
     - year (integer)
     Initialize these attributes via the constructor.
     """
-    def __init__(self, make, model, year):
-        self.make= make
-        self.model= model
-        self.year= year
-        
-    def __str__(self):
-        return f"Make: {self.make}, Model: {self.model}, Year: {self.year}"
-        
-        
+    pass
 
 # Task 2: Add Methods to a Class
 class BankAccount:
@@ -25,27 +17,6 @@ class BankAccount:
     - Methods: deposit(amount), withdraw(amount), and get_balance().
     Withdrawing more than the balance should raise a ValueError.
     """
-    
-    def __init__(self, balance):
-        
-        self.balance= balance
-        
-    def deposit(self,amount):
-        # self.amount= int(input('Enter amount: '))
-        if amount <= 0:
-            raise ValueError ("amount need to be a positive integer")
-        self.balance += amount
-        
-    def withdraw(self,amount):
-        
-        if amount > self.balance:
-            raise ValueError ("Insuficient funds")
-        self.balance -= amount
-        
-    def get_balance(self):
-        return self.balance
-        
-    
     pass
 
 # Task 3: Inheritance
@@ -57,10 +28,7 @@ class Dog(Animal):
     """
     Inherit from Animal and override speak() to return "Woof!".
     """
-    def speak(self):
-        
-        return "woof"
-dog = Dog()
+    pass
 
 # Task 5: Static Methods
 class MathOperations:
@@ -69,23 +37,7 @@ class MathOperations:
     - add(a, b): returns a + b
     - factorial(n): returns the factorial of n (use a loop).
     """
-
-    @staticmethod    
-    def add(a,b):
-        results= a + b
-        return results
-    
-    @staticmethod
-    def factorial(n):
-        if n < 0:
-            return "Invalid input"
-        
-        fact = 1
-        for i in range(1, n +1):
-            fact *= i
-        return fact
-        
-
+    pass
 
 # Task 6: Properties and Setters
 class Temperature:
@@ -102,14 +54,7 @@ class Vector:
     Create a Vector class with x and y attributes.
     Overload the `+` operator to add two Vector instances.
     """
-    
-    def __init__(self, x, y):
-        self.x= x
-        self.y= y
-    
-    def __add__(self, other):
-        
-        return Vector(self.x + other.x, self.y + other.y)
+    pass
 
 # Task 8: Class with Exception Handling
 class Book:
@@ -119,16 +64,4 @@ class Book:
     - author (string)
     The constructor should raise a ValueError if title or author is empty.
     """
-    
-    def __init__(self,title, author):
-        self.title= title
-        self.author= author
-        
-        if title == "" or author == "":
-            raise ValueError ("Title and author should be not empty")
-        
-        try:
-            book1= Book("", "A.E. James")
-            raise ValueError ("Author or Title should not be empty")
-        except ValueError as e:
-            print(f"Error {e}")
+    pass
